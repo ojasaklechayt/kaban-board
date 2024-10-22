@@ -1,0 +1,101 @@
+.ticket-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.ticket-id {
+    color: #6B6F76;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    position: relative;
+}
+
+.availability-dot {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.ticket-title {
+    color: #373737;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.ticket-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.ticket-priority {
+    display: flex;
+    align-items: center;
+}
+
+.priority-icon, .status-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.ticket-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-tag {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid;
+    border-color: #6B6F76;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: gray;
+}
+
+.notification-icon {
+    width: 12px; /* Adjust the size as needed */
+    height: 12px; /* Adjust the size as needed */
+    border-radius: 50%; /* This creates the circle */
+    background-color: gray; /* Set the desired gray color */
+    display: inline-block; /* This makes sure it behaves like an inline element */
+    margin-right: 5px; /* Optional: add space between the circle and text */
+}
+
+.ticket-card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.title-status{
+    display: flex;
+}

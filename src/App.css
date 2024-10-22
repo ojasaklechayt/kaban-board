@@ -1,0 +1,7 @@
+.App {
+  display: flex;
+  justify-items: center;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow: hidden; /* Hide overflow if needed */
+}

@@ -1,0 +1,126 @@
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    padding-right: 5%;
+    background-color: white;
+    width: 95vw;
+    margin: 0;
+}
+
+
+.display-menu {
+    position: relative;
+    width: 120px;
+    margin: 20px;
+}
+
+.display-button {
+    width: 100%;
+    padding: 6px 10px;
+    background: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.display-button:hover {
+    background: #f9f9f9;
+}
+
+.chevron {
+    font-size: 10px;
+    color: #666;
+}
+
+.menu-popup {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu-section {
+    margin-bottom: 12px;
+}
+
+.menu-section:last-child {
+    margin-bottom: 0;
+}
+
+.menu-section label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.menu-section select {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    font-size: 14px;
+    color: black;
+    background: white;
+}
+
+.menu-section select:focus {
+    outline: none;
+    border-color: #0066ff;
+}
+
+.board-columns {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 240px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.column h2 {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.ticket-card {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-card:last-child {
+    margin-bottom: 0;
+}
+
+.ticket-count {
+    color: gray;
+}
+
+.ticket-col-name {
+    color: black;
+}
