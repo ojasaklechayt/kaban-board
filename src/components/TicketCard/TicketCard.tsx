@@ -3,16 +3,16 @@ import './TicketCard.css';
 import { Ticket } from '../../utils/types';
 
 // Import SVG assets
-import highPriority from '../assets/Img - High Priority.svg';
-import mediumPriority from '../assets/Img - Medium Priority.svg';
-import lowPriority from '../assets/Img - Low Priority.svg';
-import noPriority from '../assets/No-priority.svg';
-import urgentPriority from '../assets/SVG - Urgent Priority colour.svg';
-import todoIcon from '../assets/To-do.svg';
-import inProgressIcon from '../assets/in-progress.svg';
-import doneIcon from '../assets/Done.svg';
-import cancelledIcon from '../assets/Cancelled.svg';
-import backlogIcon from '../assets/Backlog.svg';
+import highPriority from '../../assets/Img - High Priority.svg';
+import mediumPriority from '../../assets/Img - Medium Priority.svg';
+import lowPriority from '../../assets/Img - Low Priority.svg';
+import noPriority from '../../assets/No-priority.svg';
+import urgentPriority from '../../assets/SVG - Urgent Priority colour.svg';
+import todoIcon from '../../assets/To-do.svg';
+import inProgressIcon from '../../assets/in-progress.svg';
+import doneIcon from '../../assets/Done.svg';
+import cancelledIcon from '../../assets/Cancelled.svg';
+import backlogIcon from '../../assets/Backlog.svg';
 
 interface TicketCardProps {
     ticket: Ticket;

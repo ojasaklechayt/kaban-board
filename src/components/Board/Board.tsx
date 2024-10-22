@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import TicketCard from '../TicketCard';
+import TicketCard from '../TicketCard/TicketCard';
 import { fetchTickets } from '../../services/api';
 import { Ticket, User } from '../../utils/types';
 import downIcon from '../../assets/down.svg';
@@ -30,10 +30,8 @@ const Board: React.FC = () => {
     const [groupBy, setGroupBy] = useState<string>(() => localStorage.getItem('groupBy') || 'status');
     const [isDisplayMenuOpen, setIsDisplayMenuOpen] = useState<boolean>(false);
 
-    // Define all possible statuses
     const allStatuses = ['Backlog', 'Todo', 'In progress', 'Done', 'Cancelled'];
 
-    // Priority mapping
     const priorityNames: { [key: string]: string } = {
         'Priority 0': 'No Priority',
         'Priority 1': 'Low',
@@ -42,7 +40,6 @@ const Board: React.FC = () => {
         'Priority 4': 'Urgent',
     };
 
-    // Helper function to get status icon
     const getStatusIcon = (status: string): string => {
         switch (status.toLowerCase()) {
             case 'backlog':
@@ -60,7 +57,6 @@ const Board: React.FC = () => {
         }
     };
 
-    // Helper function to get priority icon
     const getPriorityIcon = (priority: string): string => {
         const level = parseInt(priority.split(' ')[1]);
         switch (level) {
@@ -109,10 +105,10 @@ const Board: React.FC = () => {
         const user = users.find((user) => user.id === userId);
         if (user) {
             const initial = user.name.charAt(0).toUpperCase();
-            const color = fixedColorMapping(user.id); // Use fixed color mapping
+            const color = fixedColorMapping(user.id);
             return { initial, color };
         }
-        return { initial: '?', color: 'gray' }; // Fallback
+        return { initial: '?', color: 'gray' };
     };
 
     // Mapping for fixed colors based on user ID
