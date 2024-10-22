@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import TicketCard from './TicketCard';
-import { fetchTickets } from '../services/api';
-import { Ticket, User } from '../utils/types';
-import downIcon from '../assets/down.svg';
-import backlogIcon from '../assets/Backlog.svg';
-import todoIcon from '../assets/To-do.svg';
-import inProgressIcon from '../assets/in-progress.svg';
-import doneIcon from '../assets/Done.svg';
-import cancelledIcon from '../assets/Cancelled.svg';
-import noPriorityIcon from '../assets/No-priority.svg';
-import lowPriorityIcon from '../assets/Img - Low Priority.svg';
-import mediumPriorityIcon from '../assets/Img - Medium Priority.svg';
-import highPriorityIcon from '../assets/Img - High Priority.svg';
-import urgentPriorityIcon from '../assets/SVG - Urgent Priority colour.svg';
-import menu from '../assets/Display.svg';
-import threedots from '../assets/3 dot menu.svg';
-import plus from '../assets/add.svg';
+import TicketCard from '../TicketCard';
+import { fetchTickets } from '../../services/api';
+import { Ticket, User } from '../../utils/types';
+import downIcon from '../../assets/down.svg';
+import backlogIcon from '../../assets/Backlog.svg';
+import todoIcon from '../../assets/To-do.svg';
+import inProgressIcon from '../../assets/in-progress.svg';
+import doneIcon from '../../assets/Done.svg';
+import cancelledIcon from '../../assets/Cancelled.svg';
+import noPriorityIcon from '../../assets/No-priority.svg';
+import lowPriorityIcon from '../../assets/Img - Low Priority.svg';
+import mediumPriorityIcon from '../../assets/Img - Medium Priority.svg';
+import highPriorityIcon from '../../assets/Img - High Priority.svg';
+import urgentPriorityIcon from '../../assets/SVG - Urgent Priority colour.svg';
+import menu from '../../assets/Display.svg';
+import threedots from '../../assets/3 dot menu.svg';
+import plus from '../../assets/add.svg';
 import './Board.css';
 
 type GroupedTickets = {
@@ -258,7 +258,7 @@ const Board: React.FC = () => {
                                                         borderRadius: '50%',
                                                         backgroundColor: color,
                                                         color: 'white',
-                                                        fontWeight: 'bold',
+                                                        fontSize: '15px',
                                                         marginRight: '12px',
                                                     }}
                                                 >
